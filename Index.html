@@ -22,15 +22,11 @@
         }
 
         .foto {
-            width: 100px;
-            margin: 1rem;
             transition: transform 0.3s ease;
-            /* Suaviza la transición */
         }
 
         .foto:hover {
             transform: scale(1.1);
-            /* Aumenta el tamaño de la imagen al hacer hover */
         }
 
         .habilidades ul {
@@ -54,16 +50,6 @@
         .technology-category {
             margin: 2rem 0;
         }
-
-        .profile-picture {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color: #ccc;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
     </style>
 </head>
 
@@ -77,7 +63,7 @@
                     <h1 class="text-3xl font-bold">Portafolio de Manuel Ordoñez</h1>
                     <p class="mt-2">Desarrollador Web</p>
                 </div>
-                <img class="profile-picture foto" src="styles/images/FotoPerfil.jpeg" alt="Hola"></img>
+                <img class="profile-picture foto w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full bg-gray-300" src="styles/images/FotoPerfil.jpeg" alt="Hola">
             </div>
         </div>
     </header>
@@ -111,8 +97,7 @@
                     <li>querys especiales</li>
                     <li>Principios SOLID</li>
                 </ul>
-                <p class="text-custom-blue font-bold">Otras tegnologias:</p>
-
+                <p class="text-custom-blue font-bold">Otras tecnologías:</p>
                 <p>Java, PHP (CodeIgniter), Node.js (Express, Mongoose), Prisma y GraphQL</p>
                 <p>Bases de datos: PostgreSQL, SQL Server, MySQL, MongoDB.</p>
                 <p>Sistemas Operativos: Windows, Linux (Ubuntu, Debian)</p>
@@ -131,9 +116,9 @@
                     <li>Tailwind</li>
                     <li>Web APIs</li>
                     <li>Blazor</li>
-                    <p>React.js: Vite, React Router Dom, Remix.js, Next.js</p>
+                    <li>React.js: Vite, React Router Dom, Remix.js, Next.js</li>
                 </ul>
-                <p class="text-custom-blue font-bold">Otras tegnologias:</p>
+                <p class="text-custom-blue font-bold">Otras tecnologías:</p>
                 <p>Angular.js</p>
                 <p>React Native</p>
                 <p>Vue.js</p>
@@ -235,7 +220,7 @@
     <!-- Contact Section -->
     <section class="container mx-auto p-6 mt-6 mb-12">
         <h2 class="text-2xl font-bold text-custom-blue mb-4">Correo: desarrolladormanuel@gmail.com</h2>
-        <h2 class="text-2xl font-bold text-custom-blue mb-4">Telefono: 54215106</h2>
+        <h2 class="text-2xl font-bold text-custom-blue mb-4">Teléfono: 54215106</h2>
         <h2 class="text-2xl font-bold text-custom-blue mb-4">Contacto:</h2>
         <form id="contact-form" class="bg-gray-100 p-6 rounded-lg shadow-md">
             <div class="mb-4">
