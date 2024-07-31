@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("aaFR0l1tNuCYQunfQ"); // Asegúrate de que esta es la clave pública correcta
         })();
     </script>
     <style>
-        .bg-custom-blue { background-color: #00BFFF; }
-        .text-custom-blue { color: #00BFFF; }
+        .bg-custom-blue {
+            background-color: #00BFFF;
+        }
+
+        .text-custom-blue {
+            color: #00BFFF;
+        }
+
         .foto {
             width: 100px;
             margin: 1rem;
-            transition: transform 0.3s ease; /* Suaviza la transición */
+            transition: transform 0.3s ease;
+            /* Suaviza la transición */
         }
+
         .foto:hover {
-            transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+            transform: scale(1.1);
+            /* Aumenta el tamaño de la imagen al hacer hover */
         }
+
         .habilidades ul {
             list-style: none;
             padding-left: 0;
         }
+
         .habilidades i {
             color: #0d6efd;
             font-size: 50px;
         }
+
         .technologies-section {
             display: flex;
             flex-wrap: wrap;
@@ -37,24 +50,41 @@
             align-items: center;
             gap: 1rem;
         }
+
         .technology-category {
             margin: 2rem 0;
         }
+
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ccc;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
     </style>
 </head>
+
 <body class="bg-white text-gray-800 font-sans">
 
     <!-- Header -->
-    <header class="bg-custom-blue text-white p-6">
+    <header class="bg-custom-blue text-white p-6 relative">
         <div class="container mx-auto">
-            <h1 class="text-3xl font-bold">Portafolio de Manuel Ordoñez</h1>
-            <p class="mt-2">Desarrollador Web</p>
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">Portafolio de Manuel Ordoñez</h1>
+                    <p class="mt-2">Desarrollador Web</p>
+                </div>
+                <img class="profile-picture foto" src="styles/images/FotoPerfil.jpeg" alt="Hola"></img>
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section class="container mx-auto p-6 mt-6">
-        <h2 class="text-2xl font-bold text-custom-blue mb-4">Sobre mí</h2>
+    <section class="container mx-auto p-6 mt-10">
+        <h2 class="text-2xl font-bold text-custom-blue mb-4 mt-10">Sobre mí</h2>
         <p class="text-lg">
             Soy un desarrollador web con experiencia en crear aplicaciones y sitios web modernos y eficientes. Me apasiona aprender nuevas tecnologías y mejorar continuamente mis habilidades.
         </p>
@@ -82,11 +112,11 @@
                     <li>Principios SOLID</li>
                 </ul>
                 <p class="text-custom-blue font-bold">Otras tegnologias:</p>
-               
+
                 <p>Java, PHP (CodeIgniter), Node.js (Express, Mongoose), Prisma y GraphQL</p>
                 <p>Bases de datos: PostgreSQL, SQL Server, MySQL, MongoDB.</p>
                 <p>Sistemas Operativos: Windows, Linux (Ubuntu, Debian)</p>
-                <p>Docker: Creación de Contenedores y virtualizaciones mediante  VCN</p>
+                <p>Docker: Creación de Contenedores y virtualizaciones mediante VCN</p>
                 <p>Modelo Vista Controlador (MVC)</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg habilidades">
@@ -99,7 +129,7 @@
                 <ul>
                     <li>Boostrap</li>
                     <li>Tailwind</li>
-                    <li>Web APIs</li>                 
+                    <li>Web APIs</li>
                     <li>Blazor</li>
                     <p>React.js: Vite, React Router Dom, Remix.js, Next.js</p>
                 </ul>
@@ -198,13 +228,15 @@
                     <a href="proyecto4.html" class="bg-custom-blue text-white px-3 py-2 rounded mt-4 inline-block text-sm">Ver más</a>
                 </div>
             </div>
-            
+
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section class="container mx-auto p-6 mt-6 mb-12">
-        <h2 class="text-2xl font-bold text-custom-blue mb-4">Contacto</h2>
+        <h2 class="text-2xl font-bold text-custom-blue mb-4">Correo: desarrolladormanuel@gmail.com</h2>
+        <h2 class="text-2xl font-bold text-custom-blue mb-4">Telefono: 54215106</h2>
+        <h2 class="text-2xl font-bold text-custom-blue mb-4">Contacto:</h2>
         <form id="contact-form" class="bg-gray-100 p-6 rounded-lg shadow-md">
             <div class="mb-4">
                 <label for="name" class="block text-sm font-bold mb-2">Nombre:</label>
@@ -227,11 +259,12 @@
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Manuel Ordoñez. Todos los derechos reservados.</p>
             <div class="mt-2">
-                <a href="#" class="text-white mx-2">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/manuel-ordo%C3%B1ez-silva-3528b4235/" class="text-white mx-2">LinkedIn</a>
             </div>
         </div>
     </footer>
 
     <script src="scripts/contact.js"></script> <!-- Enlace al archivo JS externo -->
 </body>
+
 </html>
